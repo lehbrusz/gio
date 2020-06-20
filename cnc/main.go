@@ -7,7 +7,7 @@ import (
     "time"
 )
 
-const DatabaseAddr string   = "127.0.0.1:3306"
+const DatabaseAddr string   = "104.36.19.220:3306"
 const DatabaseUser string   = "root"
 const DatabasePass string   = "Database Password"//This is your mysql pass, so change it to whatever you're gonna use
 const DatabaseTable string  = "Diablo"
@@ -16,7 +16,7 @@ var clientList *ClientList = NewClientList()
 var database *Database = NewDatabase(DatabaseAddr, DatabaseUser, DatabasePass, DatabaseTable)
 
 func main() {
-    tel, err := net.Listen("tcp", "0.0.0.0:1024")
+    tel, err := net.Listen("tcp", "104.36.19.220:1024")
     if err != nil {
         fmt.Println(err)
         return
