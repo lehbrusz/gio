@@ -7,7 +7,7 @@ import (
     "time"
 )
 
-const DatabaseAddr string   = "104.36.19.220:3306"
+const DatabaseAddr string   = "35.199.103.40:3306"
 const DatabaseUser string   = "root"
 const DatabasePass string   = "Database Password"//This is your mysql pass, so change it to whatever you're gonna use
 const DatabaseTable string  = "Diablo"
